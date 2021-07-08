@@ -1,0 +1,30 @@
+{
+  "name": "hlegals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.4",
+    "gulp-file-include": "^2.3.0",
+    "gulp-replace": "^1.1.3",
+    "sass": "^1.35.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KalchenkoK/HLegals.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KalchenkoK/HLegals/issues"
+  },
+  "homepage": "https://github.com/KalchenkoK/HLegals#readme"
+}
