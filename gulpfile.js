@@ -4,7 +4,7 @@ const gulp = require('gulp'),
       browserSync = require('browser-sync');
       replace = require('gulp-replace');
 
-gulp.task('copy:images', function() {
+gulp.task('copy:icons', function() {
         return gulp.src('./src/assets/icons/*')
         .pipe(gulp.dest('./dist/assets/icons'))
       });
@@ -56,4 +56,4 @@ gulp.task("watch", function(done) {
     //gulp.watch('./assets/styles/mobile.css').on('change', browserSync.reload);
 });
 
-gulp.task('default', gulp.series(['sass', 'fileinclude', 'copy:images', 'watch']));
+gulp.task('default', gulp.series(['sass', 'fileinclude', 'copy:images', 'copy:icons', 'watch']));
