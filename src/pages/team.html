@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">   
+    <link rel="stylesheet" type="text/css" href="./css/about.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/team.css">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    @@include('./components/homepage/header/header.html',{ "img_adress": "./assets/img/LogoTeam.png", "img_fb": "./assets/icons/FBabout.svg" })    
+    <div class="team__head">
+        Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+    </div>
+    <div class="team__container">
+        <div>  
+            <img src="./assets/img/man.png" alt="man">  
+            <p class="team__container_name">Олександр Олександровський</p>        
+            <a href="./team2.html" class="team_link"><img src="./assets/icons/open.svg" alt=""></a>
+            <p class="team__container_prof">Керуючий партнер</p>            
+        </div>
+        <div><img src="./assets/img/man2.png" alt="man">  
+            <p class="team__container_name">Оксана Кобзар</p>  
+            <a href="./team2.html" class="team_link"><img src="./assets/icons/open.svg" alt=""></a>      
+            <p class="team__container_prof">Equity partner, Attorney-at-law</p>
+        </div>
+        <div><img src="./assets/img/man3.png" alt="man">  
+            <p class="team__container_name">Владислав Мельник</p>        
+            <a href="./team2.html" class="team_link"><img src="./assets/icons/open.svg" alt=""></a>
+            <p class="team__container_prof">Associate</p>
+        </div>
+        <div><img src="./assets/img/man4.png" alt="man">  
+            <p class="team__container_name">Владислав Мельник</p>      
+            <a href="./team2.html" class="team_link"><img src="./assets/icons/open.svg" alt=""></a>  
+            <p class="team__container_prof">Associate</p>
+        </div>
+        <div><img src="./assets/img/man5.png" alt="man">  
+            <p class="team__container_name">Оксана Кобзар</p> 
+            <a href="./team2.html" class="team_link"><img src="./assets/icons/open.svg" alt=""></a>      
+            <p class="team__container_prof">Equity partner, Attorney-at-law</p>
+        </div>
+        <div><img src="./assets/img/man6.png" alt="man">  
+            <p class="team__container_name">Юлія Гудименко</p>      
+            <a href="./team2.html" class="team_link"><img src="./assets/icons/open.svg" alt=""></a>  
+            <p class="team__container_prof">Associate, Attorney-at-law</p>
+            
+        </div>
+    </div>
+    @@include('./components/homepage/footer/footerItem.html')
+</body>
+</html>

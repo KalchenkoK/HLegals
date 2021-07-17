@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/it.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</head>
+
+<body>
+    <div class="it__wrapper">
+        @@include('./components/homepage/header/header.html',{ "img_adress": "./assets/img/HlegalsService.png", "img_fb": "./assets/icons/FB.svg"  })
+        <section>
+            <div class="it__header">
+                <img src="./assets/icons/icon.svg" alt="icon">
+                <h2>IT та електронна комеція</h2>
+                <p>Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери — юридична
+                    робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб наймати
+                    інхауз-юриста.</p>
+                <p> До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре знаємо, як
+                    важко в Україні знайти хорошого кандидата з досвідом у сфері інформаційних технологій.</p>
+                <button>Безкоштовна консультація</button>
+            </div>
+            <div class="it__table">
+                <div class="border"></div>
+                <h4>Послуги цього напрямку:</h4>
+                <div class="it__table_list">
+                    <div class="it__table_list-left">
+                        <ul>
+                            <li><span> супровід інвестиційних проектів з розвитку портової інфраструктури;</span></li>
+                            <li><span> паспортизація ГТС, внесення інформації про них в обов'язкові бази даних і реєстри;</span></li>
+                            <li><span>оформлення дозвільної документації для будівництва портових терміналів;</span></li>
+                            <li><span> оформлення дозвільної та іншої обов'язкової документації, необхідної для здійснення
+                                діяльності в порту (дозвіл на викиди, висновок по ОВНС, РТК і ін.);</span></li>
+                        </ul>
+                    </div>
+                    <div class="it__table_list-right">
+                        <ul>
+                            <li><span>супровід процедур, пов'язаних з орендою державного майна в порту;</span></li>
+                            <li><span>супровід процедур, пов'язаних з підтвердженням статусу портового оператора, морського агента, лінії закордонного плавання;</span></li>
+                            <li><span>супровід процедур, пов'язаних з включенням компанії в межі порту;</span></li>
+                            <li><span>оскарження дій, пов'язаних з незаконним нав'язуванням послуг в порту компаніями-монополістами.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+    @@include('./components/homepage/casesGrid/gridLayout.html', { "title": "Успішні кейси" })
+    <section class="public_homepage">
+        @@include('./components/homepage/publications/publicationsLayout.html')
+    </section>
+    @@include('./components/homepage/footer/footerItem.html')
+</body>
+
+</html>

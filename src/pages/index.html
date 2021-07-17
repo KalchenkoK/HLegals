@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hlegals</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</head>
+
+<body>
+    <main class="main">
+        @@include('./components/homepage/header/header.html',{ "img_adress": "./assets/img/Hlegals.png", "img_fb":
+        "./assets/icons/FB.svg" })
+        <section>
+            <div class="backP"> <span class="admin">
+                    системний адміністратор
+                    правових рішень</span></div>
+        </section>
+        <a class="scroll" href="#carousel">
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.5" cx="21" cy="21" r="20.5" stroke="white" />
+                <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
+            </svg>
+        </a>
+
+    </main>
+    <div class="wrapper">
+        <div class="container" id="carousel">
+            <div class="container__h">
+                <h3>Послідовні</h3>
+                <h3>Клієнтоорієнтовані</h3>
+                <h3>Інноваційні</h3>
+                <h3>Бізнес-орієнтовані
+                    юристи</h3>
+            </div>
+            <div class="container__line"></div>
+            <div class="container__text">
+                <h4>Перевертаємо уявлення про юридичні послуги</h4>
+                <p>Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і
+                    досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування
+                    морського права в Україні.</p>
+            </div>
+        </div>
+        <div class="services">
+            <p><a href="./service.html">послуги <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 1.5L6 6L1.5 10.5" stroke="white" stroke-width="2" />
+            </svg></a>  </p>
+            <h2>Що ми вміємо робити краще за інших?</h2>
+
+            <section>
+                @@include('./components/Homepage/ServicesGrid/services.html')
+            </section>
+        </div>
+    </div>
+    <div class="comand">
+        <img src="./assets/img/man.png" alt="man">
+        <div class="comand__card">
+            <a href="./team.html" class="comand__card_head">команда</a>
+            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 1.5L6 6L1.5 10.5" stroke="#24A3FF" stroke-width="2" />
+            </svg>
+            <p class="comand__card_text">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну
+                допомогу, навіть у ситуаціях, коли більшість безсилі.</p>
+            <p>Олександр Олександровський</p>
+            <p>Керуючий партнер</p>
+        </div>
+    </div>
+    <div class="comand__dots">
+        <button class="comand__dot" autofocus style="outline: none;"></button>
+        <button class="comand__dot"></button>
+        <button class="comand__dot"></button>
+    </div>
+
+    @@include('./components/homepage/casesGrid/gridLayout.html', { "title": "Успішні кейси" })
+
+    @@include('./components/homepage/Trust/trustLayout.html')
+
+    <section class="public_homepage">
+        @@include('./components/homepage/publications/publicationsLayout.html')
+    </section>
+    @@include('./components/homepage/footer/footerItem.html')
+
+</body>
+
+</html>

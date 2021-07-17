@@ -20,7 +20,35 @@ gulp.task('sass', function(){
         .pipe(browserSync.stream());
 });
 gulp.task('fileinclude', function() {
-    return gulp.src('./src/pages/homepage/index.html')
+    return gulp.src('./src/pages/*.html')
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(gulp.dest('./dist'))
+        .pipe(browserSync.stream());
+    
+});
+/*gulp.task('fileinclude', function() {
+    return gulp.src('./src/pages/AboutUs/about.html')
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(gulp.dest('./dist/'))
+        .pipe(browserSync.stream());
+});
+gulp.task('fileinclude', function() {
+    return gulp.src('./src/pages/Team/team.html')
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(gulp.dest('./dist/'))
+        .pipe(browserSync.stream());
+});
+gulp.task('fileinclude', function() {
+    return gulp.src('./src/pages/Team/team.html')
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'

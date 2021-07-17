@@ -1,0 +1,29 @@
+.footer {
+  padding: 30px 60px;
+  background: #E5E5E5;
+  &__comp {
+    margin-left: 540px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #b3b3ba;
+  }
+  &__adress {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #323264;
+    margin-right: 30px;
+  }
+  & > p > a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24a3ff;
+  }
+}

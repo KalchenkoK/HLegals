@@ -1,0 +1,127 @@
+.form {
+  padding: 20px;
+  background: #f5f5fa;
+  border-radius: 12px;
+
+  &__heading {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 800;
+    color: #f0145a;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    margin: 0 0 10px 0;
+  }
+}
+.adress {
+  color: #b3b3ba;
+  & > a {
+    color: #24a3ff;
+    font-weight: bold;
+    &:hover,
+    &:active {
+      color: #f0145a;
+      text-decoration: underline;
+    }
+  }
+}
+.lang {
+  color: #b3b3ba;
+  &:focus,
+  &:hover {
+    background: #f0145a;
+    border-radius: 8px;
+    color: white;
+  }
+}
+.contacts__block {
+  display: flex;
+  margin: 0 172px 80px 172px;
+  justify-content: space-between;
+  &_adress {
+    margin-right: 82px;
+    width: 414px;
+    padding-top: 110px;
+    & > p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 30px;
+      color: #323264;
+      margin-bottom: 20px;
+    }
+    & > a {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #24a3ff;
+      font-weight: 700;
+    }
+    & .contacts-phone {
+      color: #46466e;
+      margin-top: 40px;
+    }
+    & .contacts-hlegals {
+      color: #24a3ff;
+      margin-bottom: 40px;
+    }
+  }
+}
+.border {
+  margin: 20px 0;
+}
+.input {
+  &__item,
+  &__textarea {
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    color: #b3b3ba;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &::placeholder {
+      color: #b3b3ba;
+      font-size: 18px;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+  }
+}
+.form__subheading {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #b3b3ba;
+  padding: 10px;
+  font-weight: 600;
+}
+.form__button {
+  background: #24a3ff;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  margin-left: 138px;
+  width: 250px;
+  height: 50px;
+  &:hover{
+      transform: scale(1.1);
+      background-color: rgba(48, 230, 175, 0.5) ;
+  }
+}

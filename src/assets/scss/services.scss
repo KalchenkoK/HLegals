@@ -3,11 +3,14 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 60px 40px;
 }
-.gridItem > h3 {
+.gridItem > p {
   font-size: 24px;
   line-height: 28px;
   color: #24a3ff;
   margin: 15px 0;
+  &>a{
+  text-decoration: none;
+  }
 }
 .gridItem > span {
   font-size: 18px;

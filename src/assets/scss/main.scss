@@ -4,6 +4,7 @@
 @import url(grid.css);
 @import url(trust.css);
 @import url(publications.css);
+@import url(footer.css);
 
 body {
   font-family: "Open Sans", sans-serif !important;
@@ -14,6 +15,9 @@ body {
   background: url("../assets/img/mainBack.png") no-repeat center/cover;
   width: 100%;
   height: 100vh;
+}
+.footer {
+  background: #f5f5fa;
 }
 .header {
   padding: 50px 60px;
@@ -26,7 +30,6 @@ body {
   letter-spacing: 1px;
   color: #ffffff;
   background: none;
-  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
 
@@ -55,7 +58,9 @@ body {
   font-size: 18px;
   line-height: 21px;
   margin-left: 15px;
+  text-decoration: none;
 }
+
 .backP {
   background: url(../assets/img/P.png) no-repeat center/cover;
   background-position: center center;
@@ -90,26 +95,6 @@ body {
     filter: alpha(opacity=50);
   }
 }
-
-//КАРУСЕЛЬ ДОДЕЛАТЬ
-.vert .carousel-item-next.carousel-item-left,
-.vert .carousel-item-prev.carousel-item-right {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.vert .carousel-item-next,
-.vert .active.carousel-item-right {
-  -webkit-transform: translate3d(0, 100%, 0);
-  transform: translate3d(0, 100% 0);
-}
-
-.vert .carousel-item-prev,
-.vert .active.carousel-item-left {
-  -webkit-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
-}
-//КОНЕЦ КАРУСЕЛИ
 .wrapper {
   background: url("../assets/img/Bg.png") no-repeat center/cover;
   border-radius: 0px 0px 12px 12px;
@@ -122,7 +107,7 @@ body {
 }
 .services {
   margin: 60px;
-  & > p {
+  & > p > a {
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 1px;
@@ -159,25 +144,45 @@ body {
   line-height: 50px;
   color: #f0145a;
 }
-.comand__dot{
+.comand__dot {
   border-radius: 100%;
   width: 16px;
   height: 16px;
   border: none;
-  &:hover, &:focus{
-    background: #24A3FF;
+  &:hover,
+  &:focus {
+    background: #24a3ff;
     transform: scale(1.2);
     cursor: pointer;
   }
 }
-.comand__dots{
+.comand__dots {
   position: relative;
-  left: 50%;   
+  left: 50%;
 }
-.public_homepage{
+.public_homepage {
   padding: 40px 60px;
-  background: #F5F5FA;
-border-radius: 0px;
-max-height: 872px;
-    overflow: hidden;
+  background: #f5f5fa;
+  border-radius: 0px;
+  max-height: 872px;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  padding-top: 80px;
+  &__h {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: right;
+    color: #b3b3ba;
+    :hover,
+    :focus {
+      color: #f0145a;
+    }
+  }
+  &__line {
+    border: 2px solid #e6e6f0;
+    transform: rotate(180deg);
+    margin: 0 40px;
+  }
 }

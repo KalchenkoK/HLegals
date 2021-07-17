@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/about.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/team.css">  
+    <link rel="stylesheet" type="text/css" href="./css/team2.css">      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    @@include('./components/homepage/header/header.html',{ "img_adress": "./assets/img/LogoTeam.png", "img_fb": "./assets/icons/FBabout.svg" })   
+    <div class="man__wrapper" >
+        <div class="man__wrapper_left"><img src="./assets/img/man.png" alt="man"></div>
+        <div class="man__wrapper_right">
+            <h3>Олександр Кац</h3>
+            <span>Керуючий партнер</span>
+            <img src="./assets/icons/dot.svg" alt="dot">
+            <a href="kac@hlegals.net">kac@hlegals.net</a>
+            <img src="./assets/icons/dot.svg" alt="dot">
+            <a href="https://linkedin.com">Профіль в LinkedIn</a>
+            <div class="man__wrapper_right-border"></div>
+            <p>Олександр очолює практику міжнародної торгівлі та шиппінгу. Він спеціалізується на вирішенні спорів,
+                пов'язаних з купівлею-продажем сировинних товарів і перевезенням товарів морем.
+            </p>
+            <p>Десис представляє інтереси судновласників, експедиторів, вантажовласників, морських агентів,
+                контейнерних ліній, а також міжнародних банків і клубів P & I.</p>
+            <h5>Освіта</h5>
+            <p>Національний університет «Одеська юридична академія», магістр права.</p>
+            <h5>Досвід роботи</h5>
+            <p>До його професійного досвіду відноситься врегулювання суперечок за англійським правом і представництво
+                інтересів в іноземних комерційних арбітражах, таких як GAFTA, FOSFA та LMAA. Данило також представляє
+                інтереси клієнтів у державних судах України по аналогічним спорах, а також в МКАС і МАК при ТПП України
+            </p>
+        </div>
+    </div>
+    @@include('./components/homepage/footer/footerItem.html')
+</body>
+
+</html>
